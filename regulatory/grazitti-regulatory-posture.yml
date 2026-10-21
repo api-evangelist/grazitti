@@ -1,0 +1,22 @@
+generated: '2026-10-20'
+method: probed
+source: "Privacy Policy"
+signals:
+  data_retention:
+    evidence:
+      - source: "Privacy Policy"
+        http_status: 200
+        fetched: "yes"
+        url: https://www.grazitti.com/privacy-policy/
+        section: "Data Retention"
+        quote: "Grazitti will store the data acquired from you for a predetermined period. You have the right to request for data erasure at any time with reference to point (d) under your rights. The criteria used to determine the period of storage of personal data is the respective statutory retention period. After the expiration of that period, the corresponding data is routinely deleted, as long as it is no longer necessary for the initiation/fulfillment of the contract."
+        note: "Specifies retention period and right to erasure."
+  age_assurance:
+    evidence:
+      - source: "Privacy Policy"
+        http_status: 200
+        fetched: "yes"
+        url: https://www.grazitti.com/privacy-policy/
+        section: "Children"
+        quote: "Our products and services are intended for adults. Therefore, we do not knowingly collect, use, or disclose data from children under 16. If we learn that we have collected the personal data of a child under 16, or the equivalent minimum age depending on the jurisdiction, we will take steps to delete the data as soon as possible."
+        note: "States minimum age of 16 for data collection."

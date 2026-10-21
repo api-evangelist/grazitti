@@ -1,23 +1,78 @@
 aid: grazitti
+
 name: Grazitti Interactive
-description: 'Grazitti Interactive is a company surfaced via the API Evangelist harvest backlog (source:
-  g2-catalog) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.grazitti.com/wp-content/uploads/2020/05/og-grazitti.png
+
+description: Grazitti Interactive is a Marketing Technology Company specializing in Marketo and Salesforce consulting, community building, data
+  science, demand generation, and web development services. Founded in 2008, they provide expertise in marketing automation, CRM integration,
+  and digital transformation for enterprises.
+
 url: https://raw.githubusercontent.com/api-evangelist/grazitti/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- MarketingTechnology
+- Marketo
+- Salesforce
+- DataScience
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/grazitti-llms.txt
+- type: Hosts
+  url: hosts/grazitti-hosts.yml
+- type: Vendors
+  url: vendors/grazitti-vendors.yml
+- type: TermsOfService
+  url: https://www.grazitti.com/legal/terms-and-conditions
+- type: Support
+  url: https://www.grazitti.com/solutions/by-business-function/support/
+- type: PrivacyPolicy
+  url: https://www.grazitti.com/privacy-policy
+- type: Leadership
+  url: https://www.grazitti.com/company/leadership/
+- type: Blog
+  url: https://www.grazitti.com/blog/
+- type: DomainSecurity
+  url: security/grazitti-domain-security.yml
 - type: Website
   url: https://grazitti.com/
+
+apis: []
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-21'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://grazitti.com/
+    status: 200
